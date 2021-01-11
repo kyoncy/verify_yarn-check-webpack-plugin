@@ -9,6 +9,7 @@ Node.js: v14.15.0
 $ (cd webpack4 && npx webpack -v)
 webpack 4.45.0
 webpack-cli 4.3.1
+webpack-dev-server 3.11.1
 ```
 
 ### verification
@@ -25,15 +26,13 @@ Then, edit `package.json` > `devDependencies` > `webpack-cli` **4.3.1** to **4.3
 $ yarn start
 ```
 
-`yarn-check-webpack-plugin` works correctly.
+`yarn-check-webpack-plugin` works correctly, but not exit process.
 
 ```
 Wrong packages:
   - webpack-cli (expected 4.3.0 but got 4.3.1)
 Please run `yarn install --check-files` to update.
-[webpack-cli] Restart webpack after resolving the above issues.
-error Command failed with exit code 2.
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+✖ ｢wdm｣: Restart webpack after resolving the above issues.
 ```
 
 ## webpack5
@@ -42,6 +41,7 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 $ (cd webpack5 && npx webpack -v)
 webpack 5.12.3
 webpack-cli 4.3.1
+webpack-dev-server 3.11.1
 ```
 
 ### verification
@@ -58,13 +58,11 @@ Then, edit `package.json` > `devDependencies` > `webpack-cli` **4.3.1** to **4.3
 $ yarn start
 ```
 
-`yarn-check-webpack-plugin` works correctly.
+`yarn-check-webpack-plugin` works correctly, but not exit process.
 
 ```
 Wrong packages:
   - webpack-cli (expected 4.3.0 but got 4.3.1)
 Please run `yarn install --check-files` to update.
-[webpack-cli] Restart webpack after resolving the above issues.
-error Command failed with exit code 2.
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+✖ ｢wdm｣: Restart webpack after resolving the above issues.
 ```
